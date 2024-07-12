@@ -4,5 +4,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Testing section variables...")
+	fmt.Print("============== Section of variables ==================")
+
+	fmt.Print("======================================================")
+
 }
