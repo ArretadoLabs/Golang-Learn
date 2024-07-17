@@ -30,4 +30,25 @@ func main() {
 	userTickets = 2
 	fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
 
+	fmt.Println("================= manipulation of variables with pointers ==================")
+	// Section of create variables
+	var firstName string
+	var lastName string
+	var email string
+	var ticketsUser int
+
+	// Using function "Scan" for read input data user
+	fmt.Println("What your first name: ")
+	fmt.Scan(&firstName)
+
+	fmt.Println("What your last name: ")
+	fmt.Scan(&lastName)
+
+	fmt.Println("What your email contact: ")
+	fmt.Scan(&email)
+
+	fmt.Print("Enter number of tickets: ")
+	fmt.Scan(&ticketsUser)
+
+	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, ticketsUser, email)
 }
