@@ -5,7 +5,7 @@ import "fmt"
 
 func main() {
 
-	var conferenceName = "Go conference"
+	conferenceName := "Go conference"
 	const conferenceTickets = 50
 	var remainingTickets = 50
 
@@ -35,7 +35,7 @@ func main() {
 	var firstName string
 	var lastName string
 	var email string
-	var ticketsUser int
+	var ticketsUser uint
 
 	// Using function "Scan" for read input data user
 	fmt.Println("What your first name: ")
