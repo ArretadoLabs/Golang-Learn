@@ -19,10 +19,12 @@ func main() {
 
 // =========================================== section of functinos for calling in main function ===========================================
 
+// Exercise 1
 func helloWorld() {
 	fmt.Println("Hello World, Francisco!!")
 }
 
+// Exercise 2
 func printNumber() {
 	var number int
 	fmt.Println("Enter with your number: ")
@@ -31,6 +33,7 @@ func printNumber() {
 	fmt.Printf("Your number is %v\n", number)
 }
 
+// Exercise 3
 func sumTwoNumbers() {
 	var numberOne int
 	var numberTwo int
@@ -45,6 +48,7 @@ func sumTwoNumbers() {
 	fmt.Printf("The sum of numbers is: %v\n", sumTwoNumbers)
 }
 
+// Exercise 4
 func fourNotesAverage() {
 	var noteOne uint
 	var noteTwo uint
