@@ -23,6 +23,8 @@ func main() {
 	areaCircle()
 	// 7 - calling function = areaSquareExercise()
 	areaSquareExercise()
+	// 8 - calling function = salaryBrute()
+	salaryBrute()
 
 }
 
@@ -120,5 +122,21 @@ func areaSquareExercise() {
 	areaSquare := sideSquare * sideSquare
 
 	fmt.Printf("The area of square is: %v M²\n", areaSquare)
-	fmt.Printf("The value double of area square is: %v M²", areaSquare*2)
+	fmt.Printf("The value double of area square is: %v M²\n", areaSquare*2)
+}
+
+func salaryBrute() {
+	var hoursWorking uint
+	var moneyHour uint
+
+	fmt.Println("How many hours working in month: ")
+	fmt.Scan(&hoursWorking)
+
+	fmt.Println("How much you money for hour work: ")
+	fmt.Scan(&moneyHour)
+
+	bruteSalary := hoursWorking * moneyHour
+
+	fmt.Printf("You salary brute in month is: R$ %v\n", bruteSalary)
+
 }
