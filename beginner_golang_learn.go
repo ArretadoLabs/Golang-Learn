@@ -120,4 +120,5 @@ func areaSquareExercise() {
 	areaSquare := sideSquare * sideSquare
 
 	fmt.Printf("The area of square is: %v M²\n", areaSquare)
+	fmt.Printf("The value double of area square is: %v M²", areaSquare*2)
 }
