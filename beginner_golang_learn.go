@@ -21,6 +21,8 @@ func main() {
 	converterSizeMetersCentimeters()
 	// 6 - calling function = areaCircle()
 	areaCircle()
+	// 7 - calling function = areaSquareExercise()
+	areaSquareExercise()
 
 }
 
@@ -106,4 +108,16 @@ func areaCircle() {
 	areaCircle := PI * math.Pow(raidCircle, 2)
 
 	fmt.Printf("The area of circle is: %v\n", areaCircle)
+}
+
+func areaSquareExercise() {
+	var sideSquare float32
+
+	fmt.Println("The input value of side square: ")
+	fmt.Scan(&sideSquare)
+
+	//formula for calculate area Square
+	areaSquare := sideSquare * sideSquare
+
+	fmt.Printf("The area of square is: %v M²\n", areaSquare)
 }
