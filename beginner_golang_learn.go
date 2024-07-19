@@ -3,8 +3,11 @@ package main
 //Importing methods of library fmt
 import (
 	"fmt"
+	"math"
 )
 
+/*
+ */
 func main() {
 	// 1 - Calling function = helloWorld()
 	helloWorld()
@@ -16,6 +19,8 @@ func main() {
 	fourNotesAverage()
 	// 5 - calling function = converterSizeMetersCentimeters()
 	converterSizeMetersCentimeters()
+	// 6 - calling function = areaCircle()
+	areaCircle()
 
 }
 
@@ -89,4 +94,16 @@ func converterSizeMetersCentimeters() {
 
 	fmt.Printf("The size %v meters converted in centimeters is: %v cm(s)\n", sizeMeters, converterSizeInCentimeters)
 
+}
+
+func areaCircle() {
+	const PI = 3.14
+	var raidCircle float64
+
+	fmt.Println("Enter with value of raid circle: ")
+	fmt.Scan(&raidCircle)
+
+	areaCircle := PI * math.Pow(raidCircle, 2)
+
+	fmt.Printf("The area of circle is: %v\n", areaCircle)
 }
