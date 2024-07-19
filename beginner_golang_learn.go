@@ -14,6 +14,8 @@ func main() {
 	sumTwoNumbers()
 	// 4 - calling function = fourNotesAverage()
 	fourNotesAverage()
+	// 5 - calling function = converterSizeMetersCentimeters()
+	converterSizeMetersCentimeters()
 
 }
 
@@ -56,7 +58,7 @@ func fourNotesAverage() {
 	var noteFour uint
 	var averageNotes uint
 
-	//Input data user
+	//Input data user and storing in variable
 	fmt.Println("Note one: ")
 	fmt.Scan(&noteOne)
 
@@ -69,8 +71,22 @@ func fourNotesAverage() {
 	fmt.Println("Note four: ")
 	fmt.Scan(&noteFour)
 
+	// calculating average notes and divided four
 	averageNotes = (noteOne + noteTwo + noteThree + noteFour) / 4
 
-	fmt.Printf("The you average notes is: %v", averageNotes)
+	fmt.Printf("The you average notes is: %v\n", averageNotes)
+
+}
+
+// Exercise 5
+func converterSizeMetersCentimeters() {
+	var sizeMeters float32
+
+	fmt.Println("What size in meters: ")
+	fmt.Scan(&sizeMeters)
+
+	var converterSizeInCentimeters = sizeMeters * 100
+
+	fmt.Printf("The size %v meters converted in centimeters is: %v cm(s)\n", sizeMeters, converterSizeInCentimeters)
 
 }
