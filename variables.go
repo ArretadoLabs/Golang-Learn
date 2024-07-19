@@ -1,54 +1,72 @@
 package main
 
 //Importing methods of library fmt
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
+	// 1 - Calling function = helloWorld()
+	helloWorld()
+	// 2 - Calling function = printNumber()
+	printNumber()
+	// 3 - calling function = sumTwoNumbers()
+	sumTwoNumbers()
+	// 4 - calling function = fourNotesAverage()
+	fourNotesAverage()
 
-	conferenceName := "Go conference"
-	const conferenceTickets = 50
-	var remainingTickets = 50
+}
 
-	fmt.Print("Printing type of data store in variables\n")
+// =========================================== section of functinos for calling in main function ===========================================
 
-	//Using %T for discover of type data store in variable
-	fmt.Printf("ConferenceTickets is %T, remainingTickets %T and conferenceName %T\n", conferenceTickets, remainingTickets, conferenceName)
+func helloWorld() {
+	fmt.Println("Hello World, Francisco!!")
+}
 
-	fmt.Println("============= Printing values with on format interpolation =============")
+func printNumber() {
+	var number int
+	fmt.Println("Enter with your number: ")
+	fmt.Scan(&number)
 
-	fmt.Printf("Welcome to %v booking application\n", conferenceName) //Concept of interpolation and explict new line "\n"
-	fmt.Printf("We have total of %v tickets and %v are still available\n", conferenceTickets, remainingTickets)
-	fmt.Println("Get your tickets here to attend")
+	fmt.Printf("Your number is %v\n", number)
+}
 
-	fmt.Println("================= manipulation variables =================")
+func sumTwoNumbers() {
+	var numberOne int
+	var numberTwo int
 
-	//declaring variables
-	var userName string
-	var userTickets int
+	fmt.Println("Enter with a number one: ")
+	fmt.Scan(&numberOne)
+	fmt.Println("Enter with a number two: ")
+	fmt.Scan(&numberTwo)
 
-	userName = "Francisco"
-	userTickets = 2
-	fmt.Printf("User %v booked %v tickets.\n", userName, userTickets)
+	var sumTwoNumbers = numberOne + numberTwo
 
-	fmt.Println("================= manipulation of variables with pointers ==================")
-	// Section of create variables
-	var firstName string
-	var lastName string
-	var email string
-	var ticketsUser uint
+	fmt.Printf("The sum of numbers is: %v\n", sumTwoNumbers)
+}
 
-	// Using function "Scan" for read input data user
-	fmt.Println("What your first name: ")
-	fmt.Scan(&firstName)
+func fourNotesAverage() {
+	var noteOne uint
+	var noteTwo uint
+	var noteThree uint
+	var noteFour uint
+	var averageNotes uint
 
-	fmt.Println("What your last name: ")
-	fmt.Scan(&lastName)
+	//Input data user
+	fmt.Println("Note one: ")
+	fmt.Scan(&noteOne)
 
-	fmt.Println("What your email contact: ")
-	fmt.Scan(&email)
+	fmt.Println("Note two: ")
+	fmt.Scan(&noteTwo)
 
-	fmt.Print("Enter number of tickets: ")
-	fmt.Scan(&ticketsUser)
+	fmt.Println("Note three: ")
+	fmt.Scan(&noteThree)
 
-	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, ticketsUser, email)
+	fmt.Println("Note four: ")
+	fmt.Scan(&noteFour)
+
+	averageNotes = (noteOne + noteTwo + noteThree + noteFour) / 4
+
+	fmt.Printf("The you average notes is: %v", averageNotes)
+
 }
