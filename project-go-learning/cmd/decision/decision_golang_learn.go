@@ -9,6 +9,10 @@ func main() {
 	numberPositiveOrNegative()
 	// 3 - calling function = letterGenderPeople()
 	letterGenderPeople()
+	// 4 - calling function = letterConsonantVogal()
+	letterConsonantVogal()
+	// 5 - calling function = StudentStatusCollege()
+	StudentStatusCollege()
 
 }
 
@@ -62,4 +66,49 @@ func letterGenderPeople() {
 	} else {
 		fmt.Println("Gender is invalid, try again!")
 	}
+}
+
+func letterConsonantVogal() {
+	fmt.Println("=============== Identify letter if vogal or consonante ===============")
+
+	//section of variables
+	var letter string
+
+	//Input data user
+	fmt.Println("Input a letter: ")
+	fmt.Scan(&letter)
+
+	// structure logical
+	if letter != "a" && letter != "e" && letter != "i" && letter != "o" && letter != "u" {
+		fmt.Println("You letter is consonant")
+	} else {
+		fmt.Println("You letter is vogal")
+	}
+}
+
+func StudentStatusCollege() {
+	fmt.Println("============== Printing situation of student college ================")
+
+	// Section of variables
+	var noteOne float32
+	var noteTwo float32
+
+	// Input data
+	fmt.Println("The enter with note one: ")
+	fmt.Scan(&noteOne)
+
+	fmt.Println("The enter with note two: ")
+	fmt.Scan(&noteTwo)
+
+	averageNote := (noteOne + noteTwo) / 2
+
+	// Structure logical
+	if averageNote == 10 {
+		fmt.Println("Approved with distinction")
+	} else if averageNote < 10 && averageNote >= 7 {
+		fmt.Println("Approved")
+	} else if averageNote < 7 {
+		fmt.Println("Reproved")
+	}
+
 }
