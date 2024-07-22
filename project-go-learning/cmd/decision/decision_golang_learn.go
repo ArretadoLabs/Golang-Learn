@@ -3,10 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	// 1 - calling function: two bigger numbers
+	// 1 - calling function = two bigger numbers
 	biggerTwoNumbers()
-	// 2 - calling function: numberPositiveOrNegative()
+	// 2 - calling function = numberPositiveOrNegative()
 	numberPositiveOrNegative()
+	// 3 - calling function = letterGenderPeople()
+	letterGenderPeople()
 
 }
 
@@ -38,6 +40,26 @@ func numberPositiveOrNegative() {
 	if number >= 0 {
 		fmt.Printf("The number %v is positive\n", number)
 	} else {
-		fmt.Printf("The number %v is negative", number)
+		fmt.Printf("The number %v is negative\n", number)
+	}
+}
+
+func letterGenderPeople() {
+	fmt.Println("=============== Letter for identify gender people ===============")
+
+	//section of variables
+	var letter string
+
+	//Input data user
+	fmt.Println("Enter with a letter anyway: ")
+	fmt.Scan(&letter)
+
+	//Structure decision
+	if letter == "f" || letter == "F" {
+		fmt.Println("The gender is: Female")
+	} else if letter == "m" || letter == "M" {
+		fmt.Println("The gender is: Male")
+	} else {
+		fmt.Println("Gender is invalid, try again!")
 	}
 }
