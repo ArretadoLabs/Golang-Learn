@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// 1 - calling function = two bigger numbers
@@ -140,5 +142,6 @@ func threeBigNumbers() {
 	} else {
 		fmt.Printf("Number three is bigger, a number: %v", numberThree)
 	}
+	fmt.Println("Testing function Max in module Math")
 
 }
