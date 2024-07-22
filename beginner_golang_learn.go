@@ -29,6 +29,8 @@ func main() {
 	converterTemperature()
 	// 10 - calling function = numbersOperations()
 	numbersOperations()
+	// 11 - calling function = weightIdealPeople()
+	weightIdealPeople()
 
 }
 
@@ -155,6 +157,7 @@ func converterTemperature() {
 }
 
 func numbersOperations() {
+	fmt.Println("============ Operation with three numbers ============")
 	var numberOne int
 	var numberTwo int
 	var numberThree float64
@@ -172,4 +175,16 @@ func numbersOperations() {
 	fmt.Printf("Value of operation two is: %v\n", (numberOne*3)+int(numberThree))
 	fmt.Printf("Value of operation three is: %v\n", math.Pow((numberThree), 3))
 
+}
+
+func weightIdealPeople() {
+	var heightPeople float32
+
+	fmt.Println("Enter with you height: ")
+	fmt.Scan(&heightPeople)
+
+	// formula for calculate weight ideal in people
+	var idealWeightPeople = (72.7 * heightPeople) - 58
+
+	fmt.Printf("The people with height %v cm(s) have weight ideal is: %v\n", heightPeople, idealWeightPeople)
 }
