@@ -13,6 +13,8 @@ func main() {
 	letterConsonantVogal()
 	// 5 - calling function = StudentStatusCollege()
 	StudentStatusCollege()
+	// 6 - calling function = threeBigNumbers()
+	threeBigNumbers()
 
 }
 
@@ -109,6 +111,34 @@ func StudentStatusCollege() {
 		fmt.Println("Approved")
 	} else if averageNote < 7 {
 		fmt.Println("Reproved")
+	}
+
+}
+
+func threeBigNumbers() {
+	fmt.Println("============ Identify bigger of three numbers =============")
+
+	// section variables
+	var numberOne int
+	var numberTwo int
+	var numberThree int
+
+	// input data user
+	fmt.Println("Number one: ")
+	fmt.Scan(&numberOne)
+
+	fmt.Println("Number two: ")
+	fmt.Scan(&numberTwo)
+
+	fmt.Println("Number three: ")
+	fmt.Scan(&numberThree)
+
+	if numberOne > numberTwo && numberOne > numberThree {
+		fmt.Printf("Number one is bigger, a number: %v", numberOne)
+	} else if numberTwo > numberThree {
+		fmt.Printf("number two is bigger, a number: %v", numberTwo)
+	} else {
+		fmt.Printf("Number three is bigger, a number: %v", numberThree)
 	}
 
 }
