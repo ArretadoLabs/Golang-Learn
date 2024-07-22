@@ -25,6 +25,10 @@ func main() {
 	areaSquareExercise()
 	// 8 - calling function = salaryBrute()
 	salaryBrute()
+	// 9 - calling function = converterTemperature()
+	converterTemperature()
+	// 10 - calling function = numbersOperations()
+	numbersOperations()
 
 }
 
@@ -138,5 +142,34 @@ func salaryBrute() {
 	bruteSalary := hoursWorking * moneyHour
 
 	fmt.Printf("You salary brute in month is: R$ %v\n", bruteSalary)
+
+}
+
+func converterTemperature() {
+	var fahrenheit float32
+	fmt.Println("Enter with you temperature in Fahrenheit: ")
+	fmt.Scan(&fahrenheit)
+
+	var temperatureConverter float32 = 5 * ((fahrenheit - 32) / 9)
+	fmt.Printf("The temperature %v for converter temperature %v C°\n", fahrenheit, temperatureConverter)
+}
+
+func numbersOperations() {
+	var numberOne int
+	var numberTwo int
+	var numberThree float64
+	// Section of user data input
+	fmt.Println("Number one: ")
+	fmt.Scan(&numberOne)
+
+	fmt.Println("Number two: ")
+	fmt.Scan(&numberTwo)
+
+	fmt.Println("Number three: ")
+	fmt.Scan(&numberThree)
+
+	fmt.Printf("Value of operation one is: %v\n", (numberOne*2)*(numberTwo/2))
+	fmt.Printf("Value of operation two is: %v\n", (numberOne*3)+int(numberThree))
+	fmt.Printf("Value of operation three is: %v\n", math.Pow((numberThree), 3))
 
 }
