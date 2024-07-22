@@ -31,6 +31,8 @@ func main() {
 	numbersOperations()
 	// 11 - calling function = weightIdealPeople()
 	weightIdealPeople()
+	// 12 - calling function = weightIdealManWomen()
+	weightIdealManWomen()
 
 }
 
@@ -187,4 +189,20 @@ func weightIdealPeople() {
 	var idealWeightPeople = (72.7 * heightPeople) - 58
 
 	fmt.Printf("The people with height %v cm(s) have weight ideal is: %v\n", heightPeople, idealWeightPeople)
+}
+
+func weightIdealManWomen() {
+	fmt.Println("============= Weight ideal for man and women =============")
+
+	var heightPeople float32
+
+	fmt.Println("Enter with height people: ")
+	fmt.Scan(&heightPeople)
+
+	// formula for calculate weight ideal for man an women
+	var womenWeightIdeal = (62.1 * heightPeople) - 44.7
+	var manWeightIdeal = (72.7 * heightPeople) - 58
+
+	fmt.Printf("Height ideal for man: %v \n", manWeightIdeal)
+	fmt.Printf("Height ideal for Women: %v \n", womenWeightIdeal)
 }
