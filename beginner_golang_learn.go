@@ -33,6 +33,8 @@ func main() {
 	weightIdealPeople()
 	// 12 - calling function = weightIdealManWomen()
 	weightIdealManWomen()
+	// 13 - calling function = taxFishPrice()
+	taxFishPrice()
 
 }
 
@@ -205,4 +207,23 @@ func weightIdealManWomen() {
 
 	fmt.Printf("Height ideal for man: %v \n", manWeightIdeal)
 	fmt.Printf("Height ideal for Women: %v \n", womenWeightIdeal)
+}
+
+func taxFishPrice() {
+	fmt.Println("=============== Calculating tax of fish price ===============")
+
+	// creating variable(s)
+	var weightFish int
+	var taxFish float32
+
+	// Input data
+	fmt.Println("Enter with fish weight: ")
+	fmt.Scan(&weightFish)
+
+	if weightFish > 50 {
+		taxFish = (float32(weightFish) - 50) * 4
+	}
+
+	fmt.Printf("The value of tax weight fish is: R$%v\n", taxFish)
+
 }
