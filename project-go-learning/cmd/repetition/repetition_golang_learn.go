@@ -51,6 +51,7 @@ func nameLoginAndPasswordNotEquals() {
 
 	}
 
-	fmt.Printf("The values of name and password final is: Login:%v and password:%v\n", nameUser, password)
+	fmt.Printf("The values of name login is: Login:%v\n", nameUser)
+	fmt.Printf("The values of password is: password:%v\n", password)
 
 }
