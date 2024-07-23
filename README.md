@@ -32,6 +32,10 @@ Realizar o download da linguagem na versão estável. Versão utilizada até a d
 ```
 https://go.dev/dl/go1.22.5.windows-amd64.msi
 ```
+Depois fazer o download do Visual Studio Code. Neste exemplo está sendo usado para Windows mas escolha obviamente o VS Code para o sistema operacional que você utiliza
+```
+https://code.visualstudio.com/
+```
     
 ## Etiquetas
 
