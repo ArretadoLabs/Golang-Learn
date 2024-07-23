@@ -107,5 +107,4 @@ func validationInformationPersona() {
 		fmt.Println("Enter with your state civil: ")
 		fmt.Scan(&stateCivil)
 	}
-	fmt.Println("Ending validation of information...")
 }
