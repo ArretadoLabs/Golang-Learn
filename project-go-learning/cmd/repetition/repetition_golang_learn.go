@@ -1,25 +1,56 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// 1 - calling function for print number between zero and ten
+	// 1 - calling function = numberBetweenZeroTen()
 	numberBetweenZeroTen()
+	// 2 - calling function = nameLoginAndPasswordNotEquals()
+	nameLoginAndPasswordNotEquals()
 
 }
 
-// functions auxiliar for calling em function "main()"
-
 func numberBetweenZeroTen() {
-	fmt.Println("Inputing a number between zero and ten")
+	fmt.Println("------------ Printing value number valid (between zero or ten) ---------------")
+	var number int
 
-	// Create variable with value for forcing enter in loop iteration
-	number := 11
+	// input data user
+	fmt.Println("Enter with a number valid: ")
+	fmt.Scan(&number)
 
+	// loop iteration for valid number
 	for number < 0 || number > 10 {
-		fmt.Println("The enter with a number: ")
+		fmt.Println("Number invalid, try again!")
 		fmt.Scan(&number)
 	}
 
-	fmt.Printf("The number %v is valid\n", number)
+	// printing value final number valid
+	fmt.Printf("Number is: %v\n", number)
+}
+
+func nameLoginAndPasswordNotEquals() {
+	fmt.Println("------------ Name login and password is not equals -------------")
+
+	var nameUser, password string
+
+	for {
+		fmt.Println("Input a name user: ")
+		fmt.Scan(&nameUser)
+
+		fmt.Println("Input a password: ")
+		fmt.Scan(&password)
+
+		if strings.EqualFold(nameUser, password) {
+			fmt.Println("Name and password is equais, try again!")
+		} else {
+			break
+		}
+
+	}
+
+	fmt.Printf("The values of name and password final is: Login:%v and password:%v\n", nameUser, password)
+
 }
