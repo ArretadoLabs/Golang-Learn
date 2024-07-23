@@ -66,7 +66,7 @@ func validationInformationPersona() {
 	var age int
 	var salary float32
 	var gender string
-	// var stateCivil string
+	var stateCivil string
 
 	//Input data and validation information
 	fmt.Println("Enter with your name: ")
@@ -100,4 +100,12 @@ func validationInformationPersona() {
 		fmt.Scan(&gender)
 	}
 	fmt.Println("Next step = input your state civil")
+	fmt.Println("Enter with your state civil: ")
+	fmt.Scan(&stateCivil)
+	for stateCivil != "s" && stateCivil != "c" && stateCivil != "v" && stateCivil != "d" {
+		fmt.Println("State civil is invalid, try again!")
+		fmt.Println("Enter with your state civil: ")
+		fmt.Scan(&stateCivil)
+	}
+	fmt.Println("Ending validation of information...")
 }
