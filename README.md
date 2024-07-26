@@ -41,4 +41,6 @@ https://code.visualstudio.com/
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+> [!NOTE]
+> A estrutura de pastas e arquivos foi construída baseada em uma leitura rápida e superficial, nas versões futuras ela será estruturada adotando a convenção da linguagem.
 
