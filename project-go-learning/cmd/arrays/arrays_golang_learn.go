@@ -11,23 +11,20 @@ func main() {
 func fiverNumbersArray() {
 	fmt.Print("-------- store and printing five numbers in array -----------\n")
 
-	//Section of variables and arrays
-	var sizeArray int
+	//creating array in Golang with 5 values
+	var sizeArray int = 5
+	var array [5]int
 
-	fmt.Println("What size of you array: ")
-	fmt.Scan(&sizeArray)
-
-	array := make([]int, sizeArray)
-
-	fmt.Println("Input you number/element: ")
+	//Loop for iteration and inserting data in array
 	for i := 0; i < sizeArray; i++ {
+		fmt.Printf("Insert a value in index %d: ", i)
 		fmt.Scan(&array[i])
 	}
 
-	// printing elements inserting in array
-	fmt.Println("The elements in array is: ")
-	for _, v := range array {
-		fmt.Println(v)
+	// Printing values store in array
+	fmt.Println("The values inserted in array is: ")
+	for i := 0; i < sizeArray; i++ {
+		fmt.Printf("Value in index %d : %d \n", i, array[i])
 	}
 
 }
