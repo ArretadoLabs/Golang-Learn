@@ -9,6 +9,9 @@ func main() {
 	// 2 - calling function numbersReverseSort()
 	numbersReverseSort()
 
+	// 3 - calling function notesAverage()
+	notesAverage()
+
 }
 
 func fiverNumbersArray() {
@@ -48,4 +51,23 @@ func numbersReverseSort() {
 	for i := len(array) - 1; i >= 0; i-- { // i := len(array) initialize i with last index element in array
 		fmt.Println(array[i])
 	}
+}
+
+func notesAverage() {
+	fmt.Println("-------- Store four notes and printing note average ---------")
+
+	// Section of variables
+	var notes [4]float64
+	var sumNotes float64
+
+	//Reading notes input
+	for i := 0; i < len(notes); i++ {
+		fmt.Printf("Input your note: %d", i+1)
+		fmt.Scan(&notes[i])
+		sumNotes += notes[i]
+	}
+
+	// Calculating average of notes
+	average := sumNotes / float64(len(notes))
+	fmt.Printf("The average of notes: %.2f \n", average)
 }
